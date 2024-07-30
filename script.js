@@ -211,5 +211,5 @@ if(isOpen){
     spanItem.classList.add("bg-green-600")
 }else{
     spanItem.classList.remove("bg-green-600")
-    spanItem.classList.ADD("bg-red-500")
+    spanItem.classList.add("bg-red-500")
 }
