@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Thrones Burguer - The Burger is Coming!</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets/logo.webp"
+          alt="Logo DevBurguer"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+          Thrones Burguer
+          <h2 class="text-lg mt-4 mb-2 font-bold text-white">
+            The Burger is Coming!
+          </h2>
+        </h1>
+
+        <span class="text-sm text-white font-medium"
+          >Rua Dev 10, Recife - PE</span
+        >
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+          <span class="text-white font-medium"> Seg á Dom 18:00 as 23:00 </span>
+        </div>
+      </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      Conheça nosso menu
+    </h2>
+
+    <!--INICIO MENU-->
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <!-- produto item-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-1.jpg"
+            alt="Hamburguer Targaryen"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold text-white">Hamburguer Targaryen</p>
+            <p class="text-white text-sm">
+              Experimente nossos hambúrgueres smash de 100g com queijo cheddar
+              inglês derretido e maionese chipotle, servidos em pão brioche
+              artesanal. Uma combinação perfeita de textura e sabor em cada
+              mordida.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg text-white">R$39,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Targaryen"
+                data-price="49.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+
+        <!-- produto item-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-2.jpg"
+            alt="Hamburguer Lannister"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold text-white">Hamburguer Lannister</p>
+            <p class="text-white text-sm">
+              Experimente nosso hambúrguer de 180g com queijo gouda, maçã verde,
+              bacon crocante e maionese Dijon, servido em pão brioche artesanal.
+              Uma experiência gourmet única e deliciosa a cada mordida.
+            </p>
+            <p></p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg text-white">R$28,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Lannister"
+                data-price="38.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+
+        <!-- produto item-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-3.jpg"
+            alt="Hamburguer Stark"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold text-white">Hamburguer Stark</p>
+            <p class="text-white text-sm">
+              Delicie-se com nosso hambúrguer de 180g, coberto com gorgonzola
+              cremoso e farofa de bacon, servido em pão branco artesanal. Uma
+              combinação intensa e diferenciada para os amantes de sabores
+              marcantes.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg text-white">R$34,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Stark"
+                data-price="34.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+
+        <!-- produto item-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-4.webp"
+            alt="Hamburguer Greyjoy"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold text-white">Hamburguer Greyjoy</p>
+            <p class="text-white text-sm">
+              Experimente o Hambúrguer de Polvo: um suculento hambúrguer de 180g
+              com tentáculo de polvo frito na manteiga, pimentões amarelos
+              grelhados e molho tártaro. Servido em pão branco tostado, oferece
+              uma textura perfeita e uma combinação sofisticada de sabores.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg text-white">R$59,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Greyjoy"
+                data-price="59.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+
+        <!-- produto item-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-5.jpg"
+            alt="Hamburguer Baratheon"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold text-white">Hamburguer Baratheon</p>
+            <p class="text-white text-sm">
+              Experimente nosso hambúrguer vegano de abóbora com curry, alface,
+              molho de manga, pimenta jalapeño e beterraba crispy. Servido em
+              pão branco vegano artesanal, é uma opção saudável e saborosa feita
+              com qualidade excepcional.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg text-white">R$42,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Hamburguer Baratheon"
+                data-price="42.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+
+        <!-- produto item-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-6.webp"
+            alt="Hamburguer Greyjoy"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold text-white">Combo GOT</p>
+            <p class="text-white text-sm">
+              Experimente o nosso Combo Gourmet, que inclui quatro hambúrgueres
+              exclusivos, cada um trazendo uma combinação irresistível de
+              sabores:
+              <strong>
+                Hambúrguer Lannister, Hambúrguer Stark, Hambúrguer Targaryen,
+                Hambúrguer Baratheon</strong
+              >.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg text-white">R$129,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Combo GOT"
+                data-price="129,90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-white text-3xl">Bebidas</h2>
+      </div>
+
+      <!--Grid bebidas-->
+
+      <div
+        class="grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+        id="menu"
+      >
+        <!-- produto item-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-1.png"
+            alt="Coca lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold text-white">Coca lata</p>
+
+            <div class="flex items-center gap-3 mt-3">
+              <p class="font-bold text-lg text-white">R$6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Coca lata"
+                data-price="6.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+
+        <!-- produto item-->
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-2.png"
+            alt="Guarana-lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold text-white">Guarana lata</p>
+
+            <div class="flex items-center gap-3 mt-3">
+              <p class="font-bold text-lg text-white">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Guarana lata"
+                data-price="6.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--fim produto iutem-->
+      </div>
+
+      <!-- Fim Grid bebidas-->
+    </div>
+
+    <!--FIM MENU-->
+
+    <!--Modal cart-->
+
+    <div
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+      id="cart-modal"
+    >
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total"> 0.00 </span></p>
+
+        <p class="font-bold mt-4">Endereço de entrega:</p>
+        <input
+          type="text"
+          placeholder="Digite seu endereço completo..."
+          id="address"
+          class="w-full border-2 p-1 rounded my-1"
+        />
+        <p class="text-red-500 hidden" id="address-warn">
+          Digite seu endereço completo!
+        </p>
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn">Fechar</button>
+          <button
+            id="checkout-btn"
+            class="bg-green-500 text-white px-4 py-1 rounded"
+          >
+            Finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--fim cart-->
+
+    <!-- Button Cart Footer-->
+    <footer
+      class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center"
+    >
+      <button
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+      >
+        (<span id="cart-count">0</span>) Carrinho
+        <i class="fa fa-cart-plus text-lg - text-white"></i>
+      </button>
+
+
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
